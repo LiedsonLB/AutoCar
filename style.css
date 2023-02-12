@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+
 :root {
     --color-site: #000000;
-    --color-letter: #bebebe;
+    --color-letter: #ffffff;
+    --color-letter2: #fff;
+    --color-site2: darkgreen;
 }
 
 body {
@@ -11,6 +15,7 @@ body {
     width: 100vw;
     background-color: var(--color-site);
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
                                             /* Screen */
 #screen {
@@ -22,7 +27,7 @@ body {
 header {
     background: var(--color-site);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 header a {
     text-decoration: none;
@@ -37,6 +42,8 @@ nav {
     flex-direction: row;
     justify-content: space-around;
     padding: 15px 10px;
+    align-items: center;
+    gap: 30px;
 }
 nav a {
     font-size: 1.2em;
@@ -46,6 +53,33 @@ nav a {
     width: 100px;
     text-align: center;
     border-bottom: 1px solid var(--color-site);
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#btn-cadaster {
+    background-color: var(--color-site2);
+    color: var(--color-letter2);
+    width: 80px;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 !important;
+    border-radius: 10px;
+    gap: 10px;
+}
+#btn-cadaster:hover {
+    border-bottom: 1px solid var(--color-site);
+    background-color: #013801;
+}
+#btn-cadaster i {
+    font-size: 1.2em;
 }
 nav a:hover{
     color: #fff;
@@ -79,10 +113,6 @@ nav a:hover{
 #cont-img img {
     width: 35em;
     animation: car 4s;
-    filter: brightness(0.5);
-}
-#cont-img img:hover {
-    filter: brightness(1);
 }
 @keyframes car {
     0%{
@@ -133,7 +163,21 @@ nav a:hover{
     font-family: sans-serif;
 }
 #btn-whats {
-    background-color: darkred;
+    background-color: var(--color-site2);
+    color: var(--color-letter2);
+    width: 300px;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 46px;
+    font-family: 'Noto Sans JP', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#btn-outro {
+    background-color: transparent;
     color: var(--color-letter);
     width: 300px;
     text-align: center;
@@ -141,11 +185,12 @@ nav a:hover{
     padding: 15px 15px;
     text-decoration: none;
     border-radius: 46px;
-    font-family: sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 1px solid var(--color-letter);
 }
 #btn-whats:hover {
     color: #fff;
-    background-color: red;
+    background-color: #013801;
 }
                                                                 /* MAIN INFO */
 
@@ -166,7 +211,7 @@ nav a:hover{
 .info {
     height: 250px;
     width: 250px;
-    border: 1px double darkred;
+    border: 1px double var(--color-site2);
     color: var(--color-letter);
     font-family: sans-serif;
     padding: 2%;
@@ -188,11 +233,11 @@ nav a:hover{
     margin: 0 auto;
     justify-content: space-between;
     position: relative;
-    background: darkred;
+    background: var(--color-site2);
     padding: 40px 40px;
 }
 #destaque {
-    color: var(--color-letter);
+    color: var(--color-letter2);
     text-align: center;
     font-family: sans-serif;
 }
@@ -261,7 +306,7 @@ nav a:hover{
     text-align: center;
     height: auto;
     border-radius: 10px;
-    border: 1px solid darkred;
+    border: 1px solid var(--color-site2);
     margin: 0 auto;
 }
 .produto-img {
@@ -278,11 +323,11 @@ nav a:hover{
     width: 100%;
     height: 40px;
     background: transparent;
-    border: 1px solid var(--color-letter);
+    border: 1px solid var(--color-site2);
     border-radius: 100px;
 }
 .produto-description button:hover {
-    background-color: darkred;
+    background-color: var(--color-site2);
     border: none;
 }
 .produto-description button a{
@@ -304,10 +349,10 @@ nav a:hover{
   
 .promotion::before {
     content: ".";
-    color: darkred;
+    color: var(--color-site2);
     position: absolute;
     transform: translateX(-50%) rotate(210deg);
-    border-top: 40px solid darkred;
+    border-top: 40px solid var(--color-site2);
     border-right: 10px solid transparent;
     border-left: 10px solid transparent;
     top: 0px;
@@ -321,6 +366,7 @@ nav a:hover{
     width: 100%;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 .info_footer {
     height: 8em;
@@ -336,5 +382,5 @@ nav a:hover{
     align-items: center;
 }
 #sociais a {
-    color: var(--color-letter);
+    color: var(--color-site2);
 }

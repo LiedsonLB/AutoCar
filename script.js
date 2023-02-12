@@ -9,3 +9,9 @@ function typeWriter(elemento) {
 }
 
 typeWriter(titulo);
+
+$("#btn-outro").click(function() {
+    $('body').animate({
+      scrollTop: $("#produtos-tittle").offset().top
+    }, 10000);
+});
