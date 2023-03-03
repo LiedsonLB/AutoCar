@@ -15,3 +15,11 @@ $("#btn-outro").click(function() {
       scrollTop: $("#produtos-tittle").offset().top
     }, 10000);
 });
+
+const toggleSwitch = document.getElementById('dark-mode-toggle');
+
+toggleSwitch.addEventListener('change', function() {
+    if(this.checked) {
+    document.documentElement.setAttribute('data-theme', 'dark');
+    }  
+});
