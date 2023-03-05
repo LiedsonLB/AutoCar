@@ -3,7 +3,7 @@
 
 /* Dark Mode*/
 :root {
-    --color-site: beige;
+    --color-site: linear-gradient(to bottom, beige, #ffc65d);;
     --color-letter: #060606;
     --color-letter2: #fff;
     --color-site2: darkorange;
@@ -32,11 +32,10 @@ body {
 #screen {
     height: auto;
     width: 100vw;
-    background: var(--color-site);
+    background: linear-gradient(to bottom, beige, #ffc65d);;
 }
                                             /* Header */
 header {
-    background: var(--color-site);
     display: flex;
     justify-content: space-around;
 }
@@ -353,7 +352,7 @@ nav a:hover{
     width: 90%;
     margin-bottom: 10em;
     margin-top: 5em;
-    margin-left: 5%;
+    margin-left: 1em;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
@@ -503,7 +502,6 @@ nav a:hover{
         gap: 10px;
     }
     #cont-produtos {
-        margin-left: 2em !important;
         width: 90%;
         gap: 20px;
         margin-bottom: 30px;
@@ -547,5 +545,11 @@ nav a:hover{
     }
     #apresention-text {
         gap: 3em !important;
+    }
+}
+@media screen and (max-width: 460px) {
+    .info {
+        width: 80% !important;
+        height: 250px;
     }
 }
