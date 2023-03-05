@@ -552,4 +552,7 @@ nav a:hover{
         width: 80% !important;
         height: 250px;
     }
+    #apresention {
+        margin: 1em auto 5em auto !important;
+    }
 }
