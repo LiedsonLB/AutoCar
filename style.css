@@ -352,7 +352,8 @@ nav a:hover{
     width: 90%;
     margin-bottom: 10em;
     margin-top: 5em;
-    margin-left: 1em;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));
@@ -508,6 +509,7 @@ nav a:hover{
     }
     #cont-produtos {
         grid-template-columns: repeat(auto-fit,minmax(300px, 1fr)) !important;
+        margin-left: 1em;
     }
     .produto-img{
         width: 40%;
